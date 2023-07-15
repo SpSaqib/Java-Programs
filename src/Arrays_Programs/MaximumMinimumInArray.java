@@ -6,7 +6,7 @@ public class MaximumMinimumInArray {
 		
 		int[] a= {22,33,4,1000,5,720,60,70,890};
 		int max=a[0];
-		int temp=0;
+		int min=a[0];
 		
 		for(int i=0;i<a.length;i++)
 		{
@@ -15,8 +15,16 @@ public class MaximumMinimumInArray {
 				max=a[i];	
 			}
 		}
-		System.out.println(max);
+		System.out.println("Minimum number is in an Array is : "+max);
 
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]<min)
+			{
+				min=a[i];	
+			}
+		}
+		System.out.println("Minimum number is in an Array is : "+min);
 	}
 
 }
